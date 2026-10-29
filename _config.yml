@@ -1,6 +1,6 @@
 title: momenTUM
 url: "https://tscnlab.github.io"
-baseurl: "/momentum-sport-study-webpage"
+baseurl: "/momentum-sport-study-website"
 markdown: kramdown
 exclude:
   - README.md
