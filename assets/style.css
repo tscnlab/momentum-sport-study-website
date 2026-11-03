@@ -7,3 +7,5 @@
 .footer-brand{text-decoration:none;letter-spacing:0;font-size:.85rem;line-height:1.5}.footer-brand small{display:block;font-size:.75rem;color:#526878}.footer-brand:hover span{text-decoration:underline;text-underline-offset:3px}
 
 .study-heading{padding-top:36px;padding-bottom:20px}.study-heading .german-title{margin-bottom:0}
+
+.language-switch{display:flex;gap:4px;margin-left:auto;flex-shrink:0;border:1px solid #a5bbc9;border-radius:5px;padding:3px}.language-switch button{background:transparent;color:#34516a;padding:8px 10px;min-height:38px}.language-switch button[aria-pressed="true"]{background:#0065a8;color:white}.language-switch button:hover{background:#e3edf5}.language-switch button[aria-pressed="true"]:hover{background:#004d81}@media(max-width:680px){.site-header{flex-wrap:wrap}.language-switch{margin-left:0}.language-switch button{width:auto}.school{flex:1}}

@@ -1,23 +1,22 @@
-# Replace example sessions and IDs. Set placeholder: false when ready.
-# qr_image: local path to an approved QR image; leave empty until supplied.
+# Course end times, study IDs and enrolment QR images.
 languages:
   - code: en
     label: English
   - code: de
     label: Deutsch
 sessions:
-  - key: session-1730
-    label: "Sports course · ends 17:30"
+  - key: session-1200
+    time: "12:00"
     studies:
-      en: { id: "REPLACE_EN_1730", placeholder: true, qr_image: "" }
-      de: { id: "REPLACE_DE_1730", placeholder: true, qr_image: "" }
-  - key: session-1930
-    label: "Sports course · ends 19:30"
+      en: { id: "pilot_sport_en_example_1200_draft_01", placeholder: false, qr_image: "/assets/qr/pilot_sport_en_example_1200_draft_01_qr.png" }
+      de: { id: "pilot_sport_de_example_1200_draft_01", placeholder: false, qr_image: "/assets/qr/pilot_sport_de_example_1200_draft_01_qr.png" }
+  - key: session-1400
+    time: "14:00"
     studies:
-      en: { id: "REPLACE_EN_1930", placeholder: true, qr_image: "" }
-      de: { id: "REPLACE_DE_1930", placeholder: true, qr_image: "" }
-  - key: session-2000
-    label: "Sports course · ends 20:00"
+      en: { id: "pilot_sport_en_example_1400_draft_01", placeholder: false, qr_image: "/assets/qr/pilot_sport_en_example_1400_draft_01_qr.png" }
+      de: { id: "pilot_sport_de_example_1400_draft_01", placeholder: false, qr_image: "/assets/qr/pilot_sport_de_example_1400_draft_01_qr.png" }
+  - key: session-1600
+    time: "16:00"
     studies:
-      en: { id: "REPLACE_EN_2000", placeholder: true, qr_image: "" }
-      de: { id: "REPLACE_DE_2000", placeholder: true, qr_image: "" }
+      en: { id: "pilot_sport_en_example_1600_draft_01", placeholder: false, qr_image: "/assets/qr/pilot_sport_en_example_1600_draft_01_qr.png" }
+      de: { id: "pilot_sport_de_example_1600_draft_01", placeholder: false, qr_image: "/assets/qr/pilot_sport_de_example_1600_draft_01_qr.png" }

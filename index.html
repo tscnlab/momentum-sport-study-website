@@ -12,47 +12,45 @@ layout: null
 <script src="{{ '/assets/selector.js' | relative_url }}" defer></script>
 </head>
 <body>
-<a class="skip" href="#join">Skip to study selection / Zur Studienauswahl</a>
+<a class="skip" href="#join"><span  data-en="Skip to study selection" data-de="Zur Studienauswahl">Skip to study selection</span></a>
 <header class="site-header wrap">
 <a href="https://www.tum.de/en/" aria-label="Technical University of Munich"><img class="tum-logo" src="{{ '/assets/tum.png' | relative_url }}" alt="Technical University of Munich"></a>
-<div class="school">TUM School of Medicine and Health<br><span>Sport Psychology · Sportpsychologie</span></div>
+<div class="school">TUM School of Medicine and Health<br><span><span  data-en="Sport Psychology" data-de="Sportpsychologie">Sport Psychology</span></span></div>
+<nav class="language-switch" aria-label="Page language"><button type="button" data-language="en" lang="en" aria-pressed="true">English</button><button type="button" data-language="de" lang="de" aria-pressed="false">Deutsch</button></nav>
 </header>
 <main>
 <section class="study-heading wrap">
-<h1>{{ site.study_title | escape }}</h1>
-<p class="german-title" lang="de">{{ site.study_title_de | escape }}</p>
+<h1 data-en="{{ site.study_title | escape }}" data-de="{{ site.study_title_de | escape }}">{{ site.study_title | escape }}</h1>
 </section>
 <section id="join" class="join-section">
 <div class="wrap">
-<div class="section-heading"><h2>Join the study · An der Studie teilnehmen</h2></div>
+<div class="section-heading"><h2><span  data-en="Join the study" data-de="An der Studie teilnehmen">Join the study</span></h2></div>
 <div class="join-grid">
 <section class="download panel">
-<span class="step">01 / DOWNLOAD</span>
-<div class="app-heading"><img src="{{ '/assets/icon.png' | relative_url }}" width="64" height="64" alt="momenTUM logo"><h3>Download momenTUM</h3></div>
-<p>Install the app on your phone.<br><span lang="de">Installiere die App auf deinem Smartphone.</span></p>
-<a class="store" href="https://apps.apple.com/de/app/tum-momentum/id6444047291?l=en-GB">Download on the App Store <span aria-hidden="true">↗</span></a>
-<a class="store" href="https://play.google.com/store/apps/details?id=de.tum.sg.momentum.android">Get it on Google Play <span aria-hidden="true">↗</span></a>
+<span class="step"><span  data-en="01 / DOWNLOAD" data-de="01 / HERUNTERLADEN">01 / DOWNLOAD</span></span>
+<div class="app-heading"><img src="{{ '/assets/icon.png' | relative_url }}" width="64" height="64" alt="momenTUM logo"><h3><span  data-en="Download momenTUM" data-de="momenTUM herunterladen">Download momenTUM</span></h3></div>
+<p><span  data-en="Install the app on your phone." data-de="Installiere die App auf deinem Smartphone.">Install the app on your phone.</span></p>
+<a class="store" href="https://apps.apple.com/de/app/tum-momentum/id6444047291?l=en-GB"><span  data-en="Download on the App Store" data-de="Im App Store herunterladen">Download on the App Store</span> <span aria-hidden="true">↗</span></a>
+<a class="store" href="https://play.google.com/store/apps/details?id=de.tum.sg.momentum.android"><span  data-en="Get it on Google Play" data-de="Bei Google Play herunterladen">Get it on Google Play</span> <span aria-hidden="true">↗</span></a>
 </section>
-<section class="selector panel" aria-label="Study selector">
-<span class="step">02 / GET YOUR CODE</span>
-<h3>Get your study code</h3>
-<div class="fields"><div><label for="language">Study language / Studiensprache</label><select id="language"><option value="">Choose / Auswählen</option>{% for language in site.data.studies.languages %}<option value="{{ language.code | escape }}">{{ language.label | escape }}</option>{% endfor %}</select></div>
-<div><label for="session">Course end time / Kursende</label><select id="session"><option value="">Choose / Auswählen</option>{% for session in site.data.studies.sessions %}<option value="{{ session.key | escape }}">{{ session.label | escape }}</option>{% endfor %}</select></div></div>
-<p id="hint" class="muted">Choose your study language and course end time to display your QR code and study ID.<br><span lang="de">Wähle deine Studiensprache und das Kursende, um deinen QR-Code und deine Studien-ID anzuzeigen.</span></p>
+<section class="selector panel" aria-label="Study selector" data-label-en="Study selector" data-label-de="Studienauswahl">
+<span class="step"><span  data-en="02 / GET YOUR CODE" data-de="02 / STUDIENCODE ANZEIGEN">02 / GET YOUR CODE</span></span>
+<h3><span  data-en="Get your study code" data-de="Deinen Studiencode anzeigen">Get your study code</span></h3>
+<div class="fields"><div><label for="session" data-en="Course end time" data-de="Kursende">Course end time</label><select id="session"><option value="" data-en="Choose a time" data-de="Uhrzeit auswählen">Choose a time</option>{% for session in site.data.studies.sessions %}<option value="{{ session.key | escape }}">{{ session.time | escape }}</option>{% endfor %}</select></div></div>
+<p id="hint" class="muted" data-en="Choose your course end time to display your QR code and study ID. The page language determines your study language." data-de="Wähle das Kursende, um deinen QR-Code und deine Studien-ID anzuzeigen. Die Seitensprache bestimmt deine Studiensprache.">Choose your course end time to display your QR code and study ID. The page language determines your study language.</p>
 
 </section>
 <section class="enrol panel">
-<span class="step">03 / JOIN</span>
-<h3>Join in the app</h3>
-<p>Open momenTUM. Scan the QR code below using the app, or copy the study ID and paste it into the app.</p>
-<p lang="de">Öffne momenTUM. Scanne den QR-Code unten mit der App oder kopiere die Studien-ID und füge sie in der App ein.</p>
-<figure id="qr" hidden><img id="qr-image" width="200" height="200" alt="Study enrolment QR code / QR-Code zur Studienteilnahme"><figcaption>Scan with momenTUM · Mit momenTUM scannen</figcaption></figure>
-<figure id="qr-missing"><img class="qr-placeholder" src="{{ '/assets/qr/placeholder.svg' | relative_url }}" width="160" height="160" alt="Placeholder for study QR code — not scannable"><figcaption>Study QR to be added<br>Studien-QR-Code folgt</figcaption></figure>
-<p class="enrol-or">or paste the study ID / oder Studien-ID einfügen</p>
+<span class="step"><span  data-en="03 / JOIN" data-de="03 / TEILNEHMEN">03 / JOIN</span></span>
+<h3><span  data-en="Join in the app" data-de="In der App teilnehmen">Join in the app</span></h3>
+<p  data-en="Open momenTUM. Scan the QR code below using the app, or copy the study ID and paste it into the app." data-de="Öffne momenTUM. Scanne den QR-Code unten mit der App oder kopiere die Studien-ID und füge sie in der App ein.">Open momenTUM. Scan the QR code below using the app, or copy the study ID and paste it into the app.</p>
+<figure id="qr" hidden><img id="qr-image" width="200" height="200" alt="Study enrolment QR code" data-alt-en="Study enrolment QR code" data-alt-de="QR-Code zur Studienteilnahme"><figcaption><span  data-en="Scan with momenTUM" data-de="Mit momenTUM scannen">Scan with momenTUM</span></figcaption></figure>
+<figure id="qr-missing"><img class="qr-placeholder" src="{{ '/assets/qr/placeholder.svg' | relative_url }}" width="160" height="160" alt="Placeholder for study QR code — not scannable" data-alt-en="Placeholder for study QR code — not scannable" data-alt-de="Platzhalter für Studien-QR-Code — nicht scannbar"><figcaption><span  data-en="Study QR to be added" data-de="Studien-QR-Code folgt">Study QR to be added</span></figcaption></figure>
+<p class="enrol-or"><span  data-en="or paste the study ID" data-de="oder Studien-ID einfügen">or paste the study ID</span></p>
 <div id="result" hidden>
-<label for="study-id">Study ID / Studien-ID</label>
-<div class="id-row"><input id="study-id" readonly spellcheck="false"><button id="copy" type="button">Copy / Kopieren</button></div>
-<p id="placeholder" class="notice" hidden>Placeholder ID · Platzhalter-ID</p>
+<label for="study-id"><span  data-en="Study ID" data-de="Studien-ID">Study ID</span></label>
+<div class="id-row"><input id="study-id" readonly spellcheck="false"><button id="copy" type="button"><span  data-en="Copy" data-de="Kopieren">Copy</span></button></div>
+<p id="placeholder" class="notice" hidden><span  data-en="Placeholder ID" data-de="Platzhalter-ID">Placeholder ID</span></p>
 </div>
 <p id="status" role="status" aria-live="polite"></p>
 
@@ -64,14 +62,14 @@ layout: null
 </section>
 </main>
 <footer class="wrap footer">
-<div><strong>TUM School of Medicine and Health</strong><h2 class="contacts-heading">Contact · Kontakt</h2>
+<div><strong>TUM School of Medicine and Health</strong><h2 class="contacts-heading"><span  data-en="Contact" data-de="Kontakt">Contact</span></h2>
 <div class="contacts">
 <p><a href="https://www.hs.mh.tum.de/sportpsychologie/team/leitung/">Prof. Dr. Felix Ehrlenspiel</a><br><a href="mailto:felix.ehrlenspiel@tum.de">felix.ehrlenspiel@tum.de</a></p>
 <p>Mamoona Anees<br><a href="mailto:mamoona.anees@tum.de">mamoona.anees@tum.de</a></p>
 </div></div>
-<a class="footer-brand" href="https://momentumresearch.eu/"><img src="{{ '/assets/icon.png' | relative_url }}" width="36" height="36" alt=""><span>Powered by momenTUM<small>Research platform</small></span></a>
+<a class="footer-brand" href="https://momentumresearch.eu/"><img src="{{ '/assets/icon.png' | relative_url }}" width="36" height="36" alt=""><span><span  data-en="Powered by momenTUM" data-de="Bereitgestellt von momenTUM">Powered by momenTUM</span><small><span  data-en="Research platform" data-de="Forschungsplattform">Research platform</span></small></span></a>
 </footer>
-<noscript><p class="wrap">Enable JavaScript to select your study. / Bitte JavaScript für die Studienauswahl aktivieren.</p></noscript>
+<noscript><p class="wrap">Enable JavaScript to select your study and change the page language.</p></noscript>
   <div id="study-data" hidden>
     {% for session in site.data.studies.sessions %}
       {% for language in site.data.studies.languages %}

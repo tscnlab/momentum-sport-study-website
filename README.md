@@ -2,7 +2,7 @@
 
 Study enrolment page for TUM university sports participants. Links to the
 momenTUM app and shows the study QR code and ID for the selected language
-and course end time.
+and course end time. The page language also selects the study language.
 
 ## Study configuration
 
