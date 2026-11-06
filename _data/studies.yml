@@ -8,15 +8,15 @@ sessions:
   - key: session-1200
     time: "12:00"
     studies:
-      en: { id: "pilot_sport_en_example_1200_draft_01", placeholder: false, qr_image: "/assets/qr/pilot_sport_en_example_1200_draft_01_qr.png" }
-      de: { id: "pilot_sport_de_example_1200_draft_01", placeholder: false, qr_image: "/assets/qr/pilot_sport_de_example_1200_draft_01_qr.png" }
+      en: { id: "sport_en_1200_v2", placeholder: false, qr_image: "/assets/qr/sport_en_1200_v2_qr.png" }
+      de: { id: "sport_de_1200_v2", placeholder: false, qr_image: "/assets/qr/sport_de_1200_v2_qr.png" }
   - key: session-1400
     time: "14:00"
     studies:
-      en: { id: "pilot_sport_en_example_1400_draft_01", placeholder: false, qr_image: "/assets/qr/pilot_sport_en_example_1400_draft_01_qr.png" }
-      de: { id: "pilot_sport_de_example_1400_draft_01", placeholder: false, qr_image: "/assets/qr/pilot_sport_de_example_1400_draft_01_qr.png" }
+      en: { id: "sport_en_1400_v2", placeholder: false, qr_image: "/assets/qr/sport_en_1400_v2_qr.png" }
+      de: { id: "sport_de_1400_v2", placeholder: false, qr_image: "/assets/qr/sport_de_1400_v2_qr.png" }
   - key: session-1600
     time: "16:00"
     studies:
-      en: { id: "pilot_sport_en_example_1600_draft_01", placeholder: false, qr_image: "/assets/qr/pilot_sport_en_example_1600_draft_01_qr.png" }
-      de: { id: "pilot_sport_de_example_1600_draft_01", placeholder: false, qr_image: "/assets/qr/pilot_sport_de_example_1600_draft_01_qr.png" }
+      en: { id: "sport_en_1600_v2", placeholder: false, qr_image: "/assets/qr/sport_en_1600_v2_qr.png" }
+      de: { id: "sport_de_1600_v2", placeholder: false, qr_image: "/assets/qr/sport_de_1600_v2_qr.png" }
