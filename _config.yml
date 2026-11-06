@@ -8,5 +8,5 @@ exclude:
   - Gemfile.lock
 
 # Title
-study_title: "Sport and well-being"
-study_title_de: "Sport und Wohlbefinden"
+study_title: "How does mood change in the hours after sport?"
+study_title_de: "Wie verändert sich die Stimmung in den Stunden nach dem Sport?"

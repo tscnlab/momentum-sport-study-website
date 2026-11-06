@@ -15,11 +15,12 @@ layout: null
 <a class="skip" href="#join"><span  data-en="Skip to study selection" data-de="Zur Studienauswahl">Skip to study selection</span></a>
 <header class="site-header wrap">
 <a href="https://www.tum.de/en/" aria-label="Technical University of Munich"><img class="tum-logo" src="{{ '/assets/tum.png' | relative_url }}" alt="Technical University of Munich"></a>
-<div class="school">TUM School of Medicine and Health<br><span><span  data-en="Sport Psychology" data-de="Sportpsychologie">Sport Psychology</span></span></div>
+<div class="school">TUM School of Medicine and Health<br><span><span  data-en="Chair of Sport Psychology" data-de="Sportpsychologie">Chair of Sport Psychology</span></span></div>
 <nav class="language-switch" aria-label="Page language"><button type="button" data-language="en" lang="en" aria-pressed="true">English</button><button type="button" data-language="de" lang="de" aria-pressed="false">Deutsch</button></nav>
 </header>
 <main>
 <section class="study-heading wrap">
+<p class="eyebrow" data-en="Study 1" data-de="Studie 1">Study 1</p>
 <h1 data-en="{{ site.study_title | escape }}" data-de="{{ site.study_title_de | escape }}">{{ site.study_title | escape }}</h1>
 </section>
 <section id="join" class="join-section">
@@ -28,7 +29,7 @@ layout: null
 <div class="join-grid">
 <section class="download panel">
 <span class="step"><span  data-en="01 / DOWNLOAD" data-de="01 / HERUNTERLADEN">01 / DOWNLOAD</span></span>
-<div class="app-heading"><img src="{{ '/assets/icon.png' | relative_url }}" width="64" height="64" alt="momenTUM logo"><h3><span  data-en="Download momenTUM" data-de="momenTUM herunterladen">Download momenTUM</span></h3></div>
+<div class="app-heading"><img src="{{ '/assets/icon.png' | relative_url }}" width="64" height="64" alt="momenTUM app logo"><h3><span  data-en="Download the momenTUM app" data-de="momenTUM-App herunterladen">Download the momenTUM app</span></h3></div>
 <p><span  data-en="Install the app on your phone." data-de="Installiere die App auf deinem Smartphone.">Install the app on your phone.</span></p>
 <a class="store" href="https://apps.apple.com/de/app/tum-momentum/id6444047291?l=en-GB"><span  data-en="Download on the App Store" data-de="Im App Store herunterladen">Download on the App Store</span> <span aria-hidden="true">↗</span></a>
 <a class="store" href="https://play.google.com/store/apps/details?id=de.tum.sg.momentum.android"><span  data-en="Get it on Google Play" data-de="Bei Google Play herunterladen">Get it on Google Play</span> <span aria-hidden="true">↗</span></a>
@@ -43,8 +44,8 @@ layout: null
 <section class="enrol panel">
 <span class="step"><span  data-en="03 / JOIN" data-de="03 / TEILNEHMEN">03 / JOIN</span></span>
 <h3><span  data-en="Join in the app" data-de="In der App teilnehmen">Join in the app</span></h3>
-<p  data-en="Open momenTUM. Scan the QR code below using the app, or copy the study ID and paste it into the app." data-de="Öffne momenTUM. Scanne den QR-Code unten mit der App oder kopiere die Studien-ID und füge sie in der App ein.">Open momenTUM. Scan the QR code below using the app, or copy the study ID and paste it into the app.</p>
-<figure id="qr" hidden><img id="qr-image" width="200" height="200" alt="Study enrolment QR code" data-alt-en="Study enrolment QR code" data-alt-de="QR-Code zur Studienteilnahme"><figcaption><span  data-en="Scan with momenTUM" data-de="Mit momenTUM scannen">Scan with momenTUM</span></figcaption></figure>
+<p  data-en="Open the momenTUM app. Scan the QR code below using the app, or copy the study ID and paste it into the app." data-de="Öffne die momenTUM-App. Scanne den QR-Code unten mit der App oder kopiere die Studien-ID und füge sie in der App ein.">Open the momenTUM app. Scan the QR code below using the app, or copy the study ID and paste it into the app.</p>
+<figure id="qr" hidden><img id="qr-image" width="200" height="200" alt="Study enrolment QR code" data-alt-en="Study enrolment QR code" data-alt-de="QR-Code zur Studienteilnahme"><figcaption><span  data-en="Scan with the momenTUM app" data-de="Mit der momenTUM-App scannen">Scan with the momenTUM app</span></figcaption></figure>
 <figure id="qr-missing"><img class="qr-placeholder" src="{{ '/assets/qr/placeholder.svg' | relative_url }}" width="160" height="160" alt="Placeholder for study QR code — not scannable" data-alt-en="Placeholder for study QR code — not scannable" data-alt-de="Platzhalter für Studien-QR-Code — nicht scannbar"><figcaption><span  data-en="Study QR to be added" data-de="Studien-QR-Code folgt">Study QR to be added</span></figcaption></figure>
 <p class="enrol-or"><span  data-en="or paste the study ID" data-de="oder Studien-ID einfügen">or paste the study ID</span></p>
 <div id="result" hidden>
@@ -64,8 +65,8 @@ layout: null
 <footer class="wrap footer">
 <div><strong>TUM School of Medicine and Health</strong><h2 class="contacts-heading"><span  data-en="Contact" data-de="Kontakt">Contact</span></h2>
 <div class="contacts">
-<p><a href="https://www.hs.mh.tum.de/sportpsychologie/team/leitung/">Prof. Dr. Felix Ehrlenspiel</a><br><a href="mailto:felix.ehrlenspiel@tum.de">felix.ehrlenspiel@tum.de</a></p>
-<p>Mamoona Anees<br><a href="mailto:mamoona.anees@tum.de">mamoona.anees@tum.de</a></p>
+<p><span class="contact-role" data-en="Study lead" data-de="Studienleitung">Study lead</span><br><a href="https://www.hs.mh.tum.de/sportpsychologie/team/leitung/">Prof. Dr. Felix Ehrlenspiel</a><br><a href="mailto:felix.ehrlenspiel@tum.de">felix.ehrlenspiel@tum.de</a></p>
+<p><span class="contact-role" data-en="Conducted by · Master’s thesis" data-de="Durchführung · Masterarbeit">Conducted by · Master’s thesis</span><br>Mamoona Anees<br><a href="mailto:mamoona.anees@tum.de">mamoona.anees@tum.de</a></p>
 </div></div>
 <a class="footer-brand" href="https://momentumresearch.eu/"><img src="{{ '/assets/icon.png' | relative_url }}" width="36" height="36" alt=""><span><span  data-en="Powered by momenTUM" data-de="Bereitgestellt von momenTUM">Powered by momenTUM</span><small><span  data-en="Research platform" data-de="Forschungsplattform">Research platform</span></small></span></a>
 </footer>

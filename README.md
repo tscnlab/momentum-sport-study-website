@@ -1,4 +1,4 @@
-# Sport and well-being
+# How does mood change in the hours after sport?
 
 Study enrolment page for TUM university sports participants. Links to the
 momenTUM app and shows the study QR code and ID for the selected language

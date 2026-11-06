@@ -9,3 +9,5 @@
 .study-heading{padding-top:36px;padding-bottom:20px}.study-heading .german-title{margin-bottom:0}
 
 .language-switch{display:flex;gap:4px;margin-left:auto;flex-shrink:0;border:1px solid #a5bbc9;border-radius:5px;padding:3px}.language-switch button{background:transparent;color:#34516a;padding:8px 10px;min-height:38px}.language-switch button[aria-pressed="true"]{background:#0065a8;color:white}.language-switch button:hover{background:#e3edf5}.language-switch button[aria-pressed="true"]:hover{background:#004d81}@media(max-width:680px){.site-header{flex-wrap:wrap}.language-switch{margin-left:0}.language-switch button{width:auto}.school{flex:1}}
+
+.study-heading h1{max-width:1000px;font-size:clamp(2rem,4.6vw,3.5rem);line-height:1.15}.study-heading .eyebrow{margin-bottom:14px}.contact-role{color:#526878;font-size:.72rem}
